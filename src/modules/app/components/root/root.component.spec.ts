@@ -1,15 +1,13 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
 import { RootComponent } from './root.component';
 
 describe('RootComponent', () => {
   let demoFixtureComponent: ComponentFixture<RootComponent>;
   let oRootComponent: RootComponent;
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
-      declarations: [RootComponent],
-    });
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [RootComponent],
+    }).compileComponents();
 
     demoFixtureComponent = TestBed.createComponent(RootComponent);
     demoFixtureComponent.detectChanges();
