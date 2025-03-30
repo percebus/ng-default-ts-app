@@ -28,8 +28,7 @@ describe('HelloWorldComponent', () => {
       it('contains "{title} is running!"', () => {
         const oHTMLElement: HTMLElement = oComponentFixture.nativeElement;
 
-        const textContent =
-          oHTMLElement.querySelector('h1')?.textContent;
+        const textContent = oHTMLElement.querySelector('h1')?.textContent;
 
         expect(textContent).toContain('Hello, demo');
       });
