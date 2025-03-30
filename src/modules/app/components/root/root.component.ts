@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { HelloWorldComponent } from '../hello-world/hello-world.component';
 
 @Component({
   selector: 'app-root',
+  imports: [RouterOutlet, HelloWorldComponent],
   templateUrl: './root.component.html',
-  styleUrls: ['./root.component.scss'],
+  styleUrl: './root.component.scss',
 })
 export class RootComponent {
   title = 'demo';
