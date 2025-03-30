@@ -6,7 +6,12 @@ import { RootComponent } from './components/root/root.component';
 import { HelloWorldComponent } from './components/hello-world/hello-world.component';
 
 @NgModule({
-  imports: [BrowserModule, AppRoutingModule, RootComponent, HelloWorldComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    RootComponent,
+    HelloWorldComponent,
+  ],
   providers: [],
   bootstrap: [RootComponent],
 })
